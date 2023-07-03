@@ -95,10 +95,10 @@ $isValid=true;
     $isValid = false;
     $errors['emai'] = 'Invalid email';
   }
-  if ($user['phone'] && !filter_var($user['phone'], FILTER_VALIDATE_INT)) {
-    $isValid = false;
-    $errors['phone'] = 'Invalid phone';
-  }
+  // if ($user['phone'] && !filter_var($user['phone'], FILTER_VALIDATE_INT)) {
+  //   $isValid = false;
+  //   $errors['phone'] = 'Invalid phone';
+  // }
   if ($user['website'] && !filter_var($user['website'], FILTER_VALIDATE_URL)) {
     $isValid = false;
     $errors['website'] = 'Invalid url';

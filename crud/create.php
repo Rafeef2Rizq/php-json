@@ -1,8 +1,8 @@
 <?php
 
-include 'layouts/header.php';
+include '../layouts/header.php';
 
-require 'users.php';
+require '../users.php';
 $user=[
     'id'=>'',
     'name'=>'',
@@ -28,7 +28,7 @@ if($isValid){
         uploadfile($_FILES['image'],$usersup);
     }
   
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 }
 
@@ -38,5 +38,6 @@ if($isValid){
         <div class="card-body text-center ">
           
 
-<?php include '_form.php'; ?>
+
+<?php include '../layouts/_form.php'; ?>
     

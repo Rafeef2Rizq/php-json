@@ -1,14 +1,5 @@
 [
     {
-        "id": 5,
-        "name": "David Wilson",
-        "username": "rafeef12n",
-        "email": "davidw@example.com",
-        "phone": "3216549870",
-        "website": "https:\/\/www.example.co",
-        "extension": "png"
-    },
-    {
         "id": 6,
         "name": "Sarah Thompson",
         "username": "saraht",
@@ -23,7 +14,8 @@
         "username": "razan11",
         "email": "danielb@example.com",
         "phone": "9870123456",
-        "website": "https:\/\/www.example.xyz"
+        "website": "https:\/\/www.example.xyz",
+        "extension": "png"
     },
     {
         "id": 8,
@@ -34,19 +26,20 @@
         "website": "https:\/\/www.example.me"
     },
     {
-        "id": 9,
-        "name": "Matthew Taylor",
-        "username": "matthewt",
-        "email": "matthewt@example.com",
-        "phone": "0123456789",
-        "website": "https:\/\/www.example.us"
+        "name": "Dillon Brady",
+        "username": "mubujyvezi",
+        "email": "kilymata@mailinator.com",
+        "phone": "+1 (354) 302-4363",
+        "website": "https:\/\/www.rucucijuqacaq.cm",
+        "id": 1941221
     },
     {
-        "id": 10,
-        "name": "Sophia Roberts",
-        "username": "sophiar",
-        "email": "sophiar@example.com",
-        "phone": "6789012345",
-        "website": "https:\/\/www.example.uk"
+        "name": "Noelle Holt",
+        "username": "giwufubi",
+        "email": "xigo@mailinator.com",
+        "phone": "+1 (662) 632-6369",
+        "website": "https:\/\/www.jugeryjowe.org.uk",
+        "id": 1016147,
+        "extension": "png"
     }
 ]

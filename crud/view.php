@@ -1,17 +1,17 @@
 <?php
-include 'layouts/header.php';
+include '../layouts/header.php';
 
-require 'users.php';
+require '../users.php';
 
 if (!isset($_GET['id'])) {
-    include 'layouts/not_founded.php';
+    include '../layouts/not_founded.php';
     exit;
 }
 
 $idUser = $_GET['id'];
 $users = getUserById($idUser);
 if (!isset($users)) {
-    include 'layouts/not_founded.php';
+    include '../layouts/not_founded.php';
     exit;
 }
 ?>
@@ -24,9 +24,9 @@ if (!isset($users)) {
             <h3>Hi, <?php echo $users['name'] ?></h3>
         </div>
         <div class="d-flex">
-            <a href="index.php" class="btn btn-secondary btn-lg mr-2">Back home</a>
+            <a href="../index.php" class="btn btn-secondary btn-lg mr-2">Back home</a>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="update.php?id=<?php echo $users['id']; ?>" class="btn btn-success">Update</a>
+                <a href="crud/update.php?id=<?php echo $users['id']; ?>" class="btn btn-success">Update</a>
                 <form action="delete.php" method="post" class="btn-group" >
                     <input type="hidden" name="id" value="<?php echo $users['id']  ?>">
                     <button type="submit"class="btn btn-danger">Delete</button>
@@ -68,8 +68,11 @@ if (!isset($users)) {
             </tr>
             <tr>
                 <th scope="row">image</th>
-                <td>  <img src="images/<?php echo $users['id'] . '.' . $users['extension']; ?>" alt=""
-                            style="height: 60px;"></td>
+                <td>       <?php if (!empty($user['extension'])) : ?>
+                    <img src="../images/<?php echo $user['id'] . '.' . $user['extension']; ?>" id="previewImage" alt="Preview Image" style="height: 60px;">
+                <?php else : ?>
+                    <img src="../images/default.png" id="previewImage" alt="No Image" style="height: 60px;"  id="previewImage">
+                <?php endif; ?></td>
 
             </tr>
         </tbody>
@@ -77,5 +80,5 @@ if (!isset($users)) {
 
 
 </div>
-<?php include 'layouts/footer.php';
+<?php include '../layouts/footer.php';
 ?>

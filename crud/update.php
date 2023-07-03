@@ -1,18 +1,18 @@
 <?php
 
-include 'layouts/header.php';
+include '../layouts/header.php';
 
-require 'users.php';
+require '../users.php';
 
 if (!isset($_GET['id'])) {
-    include 'layouts/not_founded.php';
+    include '../layouts/not_founded.php';
     exit;
 }
 
 $idUser = $_GET['id'];
 $user = getUserById($idUser);
 if (!isset($user)) {
-    include 'layouts/not_founded.php';
+    include '../layouts/not_founded.php';
     exit;
 }
 // echo '<pre>';
@@ -28,11 +28,12 @@ if($isValid){
         uploadfile($_FILES['image'],$usersup);
     }
   
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 }
 ?>
-<?php include '_form.php'; ?>
+<?php include '../layouts/_form.php'; ?>
+
 
 
 

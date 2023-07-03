@@ -11,7 +11,7 @@ include 'layouts/header.php';
     <div class="card mt-3 border-success text-secondary">
     <div class="card-body d-flex justify-content-between">
         <h3>Our Team</h3>
-        <a href="create.php" class="btn btn-success">Create</a>
+        <a href="crud/create.php" class="btn btn-success">Create</a>
     </div>
 </div>
     <table class="table table-striped">
@@ -44,9 +44,9 @@ include 'layouts/header.php';
                     </td>
                     <td>
                         <div class="btn-group" role="group" aria-label="...">
-                            <a href="view.php?id=<?php echo $user['id']; ?>" class="btn btn-outline-primary">View</a>
-                            <a href="update.php?id=<?php echo $user['id']; ?>" class="btn btn-outline-success">Update</a>
-                            <form action="delete.php" method="post" class="btn-group" >
+                            <a href="crud/view.php?id=<?php echo $user['id']; ?>" class="btn btn-outline-primary">View</a>
+                            <a href="crud/update.php?id=<?php echo $user['id']; ?>" class="btn btn-outline-success">Update</a>
+                            <form action="crud/delete.php" method="post" class="btn-group" >
                     <input type="hidden" name="id" value="<?php echo $user['id']  ?>">
                     <button type="submit"class="btn btn-danger">Delete</button>
                 </form>                        </div>
