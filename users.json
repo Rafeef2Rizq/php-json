@@ -1,0 +1,52 @@
+[
+    {
+        "id": 5,
+        "name": "David Wilson",
+        "username": "rafeef12n",
+        "email": "davidw@example.com",
+        "phone": "3216549870",
+        "website": "https:\/\/www.example.co",
+        "extension": "png"
+    },
+    {
+        "id": 6,
+        "name": "Sarah Thompson",
+        "username": "saraht",
+        "email": "saraht@example.com",
+        "phone": "4567890123",
+        "website": "https:\/\/www.example.info",
+        "extension": "png"
+    },
+    {
+        "id": 7,
+        "name": "Daniel Brown",
+        "username": "razan11",
+        "email": "danielb@example.com",
+        "phone": "9870123456",
+        "website": "https:\/\/www.example.xyz"
+    },
+    {
+        "id": 8,
+        "name": "Olivia Anderson",
+        "username": "oliviaa",
+        "email": "oliviaa@example.com",
+        "phone": "1237894560",
+        "website": "https:\/\/www.example.me"
+    },
+    {
+        "id": 9,
+        "name": "Matthew Taylor",
+        "username": "matthewt",
+        "email": "matthewt@example.com",
+        "phone": "0123456789",
+        "website": "https:\/\/www.example.us"
+    },
+    {
+        "id": 10,
+        "name": "Sophia Roberts",
+        "username": "sophiar",
+        "email": "sophiar@example.com",
+        "phone": "6789012345",
+        "website": "https:\/\/www.example.uk"
+    }
+]
